@@ -1,0 +1,17 @@
+{
+  "name": "weather frontend",
+  "authors": [
+    "Jurre Vriesen <info@jurrevriesen.nl>"
+  ],
+  "description": "Visualisation for temperature and humidity",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
