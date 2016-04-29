@@ -11,8 +11,29 @@
   </head>
   <body ng-app="weatherApp">
 
-    <div ng-controller="weatherController">
+    <nav>
+      <div class="nav-wrapper blue">
+        <a href="#" class="brand-logo center">Weather</a>
+      </div>
+    </nav>
 
+    <br>
+
+    <div ng-controller="weatherController">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-content">
+                <span class="card-title">Temperature</span>
+                <p>
+                  <b>{{latestTemperature}} °C</b>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
