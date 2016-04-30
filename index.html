@@ -22,13 +22,15 @@
     <div ng-controller="weatherController">
       <div class="container">
         <div class="row">
-          <div class="col s12 m6">
-            <div class="card">
-              <div class="card-content">
-                <span class="card-title">Temperature</span>
-                <p>
-                  <b>{{latestTemperature}} °C</b>
-                </p>
+          <div ng-repeat="card in cards">
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-content">
+                  <span class="card-title">{{card.title}}</span>
+                  <p>
+                    <b>{{card.value}} {{card.unit}}</b>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
