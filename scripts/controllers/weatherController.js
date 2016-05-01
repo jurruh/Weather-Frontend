@@ -9,14 +9,22 @@ app.controller('weatherController', function($scope, $http) {
 
           $scope.cards.push({
             "title": "Temperature",
-            "value" : $scope.latestTemperature,
-            "unit" : "°C"
+            "lines" : [
+              {
+                "value" : $scope.latestTemperature,
+                "unit" : "°C"
+              }
+            ]
           });
 
           $scope.cards.push({
             "title": "Humidity",
-            "value" : $scope.latestHumidity,
-            "unit" : "%"
+            "lines" : [
+              {
+                "value" : $scope.latestHumidity,
+                "unit" : "%"
+              }
+            ]
           });
 
           $scope.latestHumidity = response.data[response.data.length - 1].humidity;
