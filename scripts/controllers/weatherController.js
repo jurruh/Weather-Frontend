@@ -6,6 +6,7 @@ app.controller('weatherController', function($scope, $http) {
       .then(function(response) {
           $scope.latestTemperature = response.data[response.data.length - 1].temperature;
           $scope.latestHumidity = response.data[response.data.length - 1].humidity;
+          $scope.latestUpdate = response.data[response.data.length - 1].time;
 
           $scope.cards.push({
             "title": "Temperature",
@@ -23,6 +24,16 @@ app.controller('weatherController', function($scope, $http) {
               {
                 "value" : $scope.latestHumidity,
                 "unit" : "%"
+              }
+            ]
+          });
+
+          $scope.cards.push({
+            "title": "Status",
+            "lines" : [
+              {
+                "title" : "Latest update:",
+                "value" : $scope.latestUpdate
               }
             ]
           });
