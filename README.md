@@ -10,4 +10,4 @@ Json format:
 ]
 ```
 
-Made width AngularJS and MaterilizeCSS
+Made width AngularJS and MaterializeCSS
